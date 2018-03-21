@@ -7,17 +7,21 @@
   <version>1.0-SNAPSHOT</version>
   <name>demo-app</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <junit.version>4.12</junit.version>
+    <jdbi.version>2.73</jdbi.version>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.jdbi</groupId>
       <artifactId>jdbi</artifactId>
-      <version>2.73</version>
+      <version>${jdbi.version}</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
