@@ -1,5 +1,7 @@
 package com.hexaware.jdbidemo;
 
+import java.util.List;
+
 public class Person {
     private int id;
     private String name;
@@ -10,6 +12,8 @@ public class Person {
         this.name = name;
         this.age = age;
     }
+
+   
 
     public void setId(int id){
         this.id = id;
@@ -30,6 +34,27 @@ public class Person {
     }
     public int getAge(){
         return this.age;
+    }
+
+    public static PersonDAO dao(){
+       DBConnection db = new DBConnection();
+       PersonDAO personDAO = db.getConnect().onDemand(PersonDAO.class);
+       return personDAO;
+    }
+
+    public static void insertIntoPersonTable(Person person){
+        System.out.println("Inserting into Person table "+person);
+        dao().save(person);
+    }
+
+    public static Person findPersonById(int personId){
+        System.out.println("Find by Person Id "+personId);
+        return dao().find(personId);
+    }
+
+    public static List<Person> listAllPerson(){
+        System.out.println("Listing all person ");
+        return dao().list();
     }
 
     @Override
