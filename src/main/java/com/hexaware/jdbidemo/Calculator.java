@@ -2,8 +2,11 @@ package com.hexaware.jdbidemo;
 
 import java.util.*;
 import java.text.ParseException;
+import org.apache.logging.log4j.*;
+import org.apache.logging.log4j.LogManager;
 
 public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
     
     private int a;
     private int b;
@@ -18,8 +21,11 @@ public class Calculator {
     }
 
     public int sum(String a, String b) throws ParseException{
+        logger.error("Entered sum method with params: a: "+a+" b: "+b );
         int a1 = Integer.parseInt(a);
+
         int b1 = Integer.parseInt(b);
+        logger.error("Returning from the sum method:" );
         return a1 + b1;
     }
 

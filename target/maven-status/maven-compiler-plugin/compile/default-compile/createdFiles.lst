@@ -1,6 +1,6 @@
-com\hexaware\jdbidemo\PersonDAO.class
-com\hexaware\jdbidemo\ClientTest.class
 com\hexaware\jdbidemo\Calculator.class
 com\hexaware\jdbidemo\DBConnection.class
 com\hexaware\jdbidemo\Person.class
 com\hexaware\jdbidemo\PersonMapper.class
+com\hexaware\jdbidemo\PersonDAO.class
+com\hexaware\jdbidemo\ClientTest.class

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="com.hexaware.jdbidemo.CalculatorTest" time="0.015" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.hexaware.jdbidemo.DemoTest" time="0.094" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
@@ -63,15 +63,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testSumWithInvalidStringValuesCatchingException" time="0.015"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testSetA" time="0"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testSumWithInvalidStringValues" time="0"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testRetunList" time="0"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testSumWithNegativeValues" time="0"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testEquslsWithSameValues" time="0"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testSumWithPositiveValues" time="0"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testHashCode" time="0"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testEqusls" time="0"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testEquslsWithDifferentValues" time="0"/>
-  <testcase classname="com.hexaware.jdbidemo.CalculatorTest" name="testConstructor" time="0"/>
+  <testcase classname="com.hexaware.jdbidemo.DemoTest" name="testInsertMethod" time="0.094"/>
 </testsuite>
