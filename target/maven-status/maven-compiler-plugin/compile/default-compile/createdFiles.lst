@@ -1,6 +1,9 @@
 com\hexaware\jdbidemo\Calculator.class
 com\hexaware\jdbidemo\DBConnection.class
+com\hexaware\jdbidemo\PersonRest.class
+com\hexaware\jdbidemo\CORSFilter.class
 com\hexaware\jdbidemo\Person.class
 com\hexaware\jdbidemo\PersonMapper.class
 com\hexaware\jdbidemo\PersonDAO.class
+com\hexaware\jdbidemo\Application.class
 com\hexaware\jdbidemo\ClientTest.class

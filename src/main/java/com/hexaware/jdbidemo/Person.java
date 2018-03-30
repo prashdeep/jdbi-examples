@@ -2,6 +2,7 @@ package com.hexaware.jdbidemo;
 
 import java.util.List;
 
+
 public class Person {
     private int id;
     private String name;
@@ -12,6 +13,8 @@ public class Person {
         this.name = name;
         this.age = age;
     }
+
+    public Person(){}
   
 
     public void setId(int id){

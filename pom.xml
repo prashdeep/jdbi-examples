@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.hexaware.jdbi-demo</groupId>
   <artifactId>demo-app</artifactId>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>demo-app</name>
   <url>http://maven.apache.org</url>
@@ -11,6 +11,18 @@
     <junit.version>4.12</junit.version>
     <jdbi.version>2.73</jdbi.version>
   </properties>
+  <dependencyManagement>
+      <dependencies>
+        <dependency>
+          <groupId>org.glassfish.jersey</groupId>
+          <artifactId>jersey-bom</artifactId>
+          <version>2.25</version>
+          <type>pom</type>
+          <scope>import</scope>
+        </dependency>
+      </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -39,7 +51,14 @@
       <artifactId>log4j-api</artifactId>
       <version>2.11.0</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+    </dependency>    
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
